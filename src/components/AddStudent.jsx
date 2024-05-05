@@ -44,7 +44,7 @@ const AddStudent = ({ handleSubmit }) => {
         <label>
           Full Name
           <input
-            value={student.name}
+            value={student.fullName}
             name="fullName"
             type="text"
             placeholder="Full Name"
@@ -119,7 +119,7 @@ const AddStudent = ({ handleSubmit }) => {
         <label>
           Graduated
           <input
-            value={student.graduated}
+            checked={student.graduated}
             name="graduated"
             type="checkbox"
             onChange={(e) => handleChange(e)}
